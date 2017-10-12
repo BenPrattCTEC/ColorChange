@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A90D3171F8FF5A100AB7B18 /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A90D3161F8FF5A100AB7B18 /* SecondScreenController.swift */; };
 		9ABF86D01F8D3BB200C9C145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF86CF1F8D3BB200C9C145 /* AppDelegate.swift */; };
 		9ABF86D21F8D3BB200C9C145 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF86D11F8D3BB200C9C145 /* ViewController.swift */; };
 		9ABF86D51F8D3BB200C9C145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABF86D31F8D3BB200C9C145 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A90D3161F8FF5A100AB7B18 /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 		9ABF86CC1F8D3BB200C9C145 /* ColorChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABF86CF1F8D3BB200C9C145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ABF86D11F8D3BB200C9C145 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A90D3151F8FF56C00AB7B18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9ABF86CF1F8D3BB200C9C145 /* AppDelegate.swift */,
+				9ABF86D11F8D3BB200C9C145 /* ViewController.swift */,
+				9A90D3161F8FF5A100AB7B18 /* SecondScreenController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9ABF86C31F8D3BB200C9C145 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +109,7 @@
 		9ABF86CE1F8D3BB200C9C145 /* ColorChange */ = {
 			isa = PBXGroup;
 			children = (
-				9ABF86CF1F8D3BB200C9C145 /* AppDelegate.swift */,
-				9ABF86D11F8D3BB200C9C145 /* ViewController.swift */,
+				9A90D3151F8FF56C00AB7B18 /* Controller */,
 				9ABF86D31F8D3BB200C9C145 /* Main.storyboard */,
 				9ABF86D61F8D3BB200C9C145 /* Assets.xcassets */,
 				9ABF86D81F8D3BB200C9C145 /* LaunchScreen.storyboard */,
@@ -261,6 +272,7 @@
 			files = (
 				9ABF86D21F8D3BB200C9C145 /* ViewController.swift in Sources */,
 				9ABF86D01F8D3BB200C9C145 /* AppDelegate.swift in Sources */,
+				9A90D3171F8FF5A100AB7B18 /* SecondScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonAction(_ sender: UIButton) {
-        view.backgroundColor = randomColor()
+        self.view.backgroundColor = self.randomColor()
     }
     
     private func randomColor() -> UIColor{
@@ -23,8 +23,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = randomColor()
-        // Do any additional setup after loading the view, typically from a nib.
+//        DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
+//            while(true){
+//                self.view.backgroundColor = UIColor(red: CGFloat(Float(arc4random()%8)/8.0), green: CGFloat(Float(arc4random()%8)/8.0), blue: CGFloat(Float(arc4random()%8)/8.0), alpha: 1)
+//                sleep(1)
+//            }
+//        })
     }
 
     override func didReceiveMemoryWarning() {
