@@ -32,6 +32,7 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="Gh3-3g-F2Q" kind="show" id="Jcx-Ta-j3r"/>
                                 </connections>
@@ -64,6 +65,7 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="c69-yX-VxY"/>
                                 </connections>
