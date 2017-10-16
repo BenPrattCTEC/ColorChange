@@ -10,5 +10,10 @@ import UIKit
 
 public class SecondScreenController: UIViewController{
     
+    public override func viewDidLoad(){
+        super.viewDidLoad()
+        self.view.backgroundColor = ColorTools.lastColor
+        
+    }
     
 }

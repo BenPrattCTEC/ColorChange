@@ -12,20 +12,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var button1: UIButton!
     
-    
     @IBAction func buttonAction(_ sender: UIButton) {
-        self.view.backgroundColor = self.randomColor()
-    }
-    
-    private func randomColor() -> UIColor{
-        return UIColor(red: CGFloat(Float(arc4random()%8)/8.0), green: CGFloat(Float(arc4random()%8)/8.0), blue: CGFloat(Float(arc4random()%8)/8.0), alpha: 1)
+        self.view.backgroundColor = ColorTools.randomColor()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       self.view.backgroundColor = ColorTools.lastColor
 //        DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
 //            while(true){
-//                self.view.backgroundColor = UIColor(red: CGFloat(Float(arc4random()%8)/8.0), green: CGFloat(Float(arc4random()%8)/8.0), blue: CGFloat(Float(arc4random()%8)/8.0), alpha: 1)
+//                self.view.backgroundColor = colorTool.randomColor()
 //                sleep(1)
 //            }
 //        })
