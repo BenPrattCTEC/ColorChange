@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A4CEEA31F97C9DA0005ACFA /* MediaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CEEA21F97C9DA0005ACFA /* MediaController.swift */; };
 		9A90D3171F8FF5A100AB7B18 /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A90D3161F8FF5A100AB7B18 /* SecondScreenController.swift */; };
 		9A90D31C1F8FF9D400AB7B18 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A90D31B1F8FF9D400AB7B18 /* ColorTools.swift */; };
 		9ABF86D01F8D3BB200C9C145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF86CF1F8D3BB200C9C145 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A4CEEA21F97C9DA0005ACFA /* MediaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaController.swift; sourceTree = "<group>"; };
 		9A90D3161F8FF5A100AB7B18 /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 		9A90D31B1F8FF9D400AB7B18 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 		9ABF86CC1F8D3BB200C9C145 /* ColorChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 		9A90D3151F8FF56C00AB7B18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9A4CEEA21F97C9DA0005ACFA /* MediaController.swift */,
 				9ABF86CF1F8D3BB200C9C145 /* AppDelegate.swift */,
 				9ABF86D11F8D3BB200C9C145 /* ViewController.swift */,
 				9A90D3161F8FF5A100AB7B18 /* SecondScreenController.swift */,
@@ -293,6 +296,7 @@
 				9ABF86D01F8D3BB200C9C145 /* AppDelegate.swift in Sources */,
 				9A90D3171F8FF5A100AB7B18 /* SecondScreenController.swift in Sources */,
 				9A90D31C1F8FF9D400AB7B18 /* ColorTools.swift in Sources */,
+				9A4CEEA31F97C9DA0005ACFA /* MediaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
