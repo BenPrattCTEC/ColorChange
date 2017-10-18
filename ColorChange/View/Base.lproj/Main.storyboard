@@ -146,7 +146,7 @@
                         <outlet property="imageButton" destination="RPZ-9H-3z3" id="Jzz-DB-crw"/>
                         <outlet property="imageViewer" destination="emb-xY-9GZ" id="TTu-D3-A1w"/>
                         <outlet property="soundButton" destination="owS-cL-fMN" id="WQr-rZ-EBL"/>
-                        <outlet property="volumeSlider" destination="duU-92-NEX" id="B0A-W2-T0x"/>
+                        <outlet property="soundSlider" destination="duU-92-NEX" id="B0A-W2-T0x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJc-7O-Trc" userLabel="First Responder" sceneMemberID="firstResponder"/>

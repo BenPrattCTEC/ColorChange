@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 public class MediaController: UIViewController{
     
@@ -14,9 +15,13 @@ public class MediaController: UIViewController{
     @IBOutlet weak var imageViewer: UIImageView!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var imageButton: UIButton!
-    @IBOutlet weak var volumeSlider: UISlider!
+    @IBOutlet weak var soundSlider: UISlider!
+    
+    private var soundPlayer : AVAudioPlayer?
     
     private var imageCounter = 0
+    
+    
     private let imageArray = [UIImage(named: "MarioSprite"), UIImage(named: "LuigiSprite"), UIImage(named: "MarioHead")]
     
     @IBAction func imageAction(_ sender: UIButton) {
@@ -24,6 +29,7 @@ public class MediaController: UIViewController{
     }
     
     @IBAction func soundAction(_ sender: UIButton) {
+        playSound()
     }
     
     @IBAction func volumeSliderAction(_ sender: UISlider) {
@@ -43,9 +49,28 @@ public class MediaController: UIViewController{
 
     }
     
+    private func loadAudioFile(){
+        if let soundURL = NSDataAsset(name: "Super Mario Bros Song (mp3)"){
+            do{
+                try! AVAudioSession.sharedInstance().setCatagory(AVAudioSessionCategoryPlayback)
+                try! AVAudioSession.sharedInstance().setActive(true)
+                
+                try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
+                
+                soundSlider.maximumValue = Float(soundPlayer?.duration)!)
+                
+            }
+        }
+    }
+    
+    
+    
+    
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = ColorTools.lastColor
+        loadAudioFile()
         
     }
     
