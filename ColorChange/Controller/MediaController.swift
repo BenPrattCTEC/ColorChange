@@ -36,6 +36,15 @@ public class MediaController: UIViewController{
     }
     
     private func playSound(){
+        
+        if let isPlaying = soundPlayer?.isPlaying{
+            if(isPlaying){
+                    soundPlayer?.pause()
+            }else{
+                soundPlayer?.play()
+            }
+            
+        }
     }
     
     private func changeImage(){
@@ -52,15 +61,21 @@ public class MediaController: UIViewController{
     private func loadAudioFile(){
         if let soundURL = NSDataAsset(name: "Super Mario Bros Song (mp3)"){
             do{
-                try! AVAudioSession.sharedInstance().setCatagory(AVAudioSessionCategoryPlayback)
+                try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
                 try! AVAudioSession.sharedInstance().setActive(true)
                 
                 try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
                 
-                soundSlider.maximumValue = Float(soundPlayer?.duration)!)
-                
+                soundSlider.maximumValue = Float((soundPlayer?.duration)!)
+                Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+            }catch{
+                print("Audio File Load Error")
             }
         }
+    }
+    
+    @objc private func updateSlider(){
+        soundSlider.value = Float((soundPlayer?.currentTime)!)
     }
     
     
